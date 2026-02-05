@@ -1,0 +1,164 @@
+.text-area {
+  flex: 1;
+  min-width: 525px;
+  max-width: 975px;
+  padding: 45px;
+}
+
+@media (max-width: 1024px) {
+  .text-area {
+    min-width: 480px;
+    max-width: 900px;
+    padding: 37px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-area {
+    max-width: 100%;
+    min-width: auto;
+    text-align: center;
+    padding: 30px;
+    margin-top: 48px;
+  }
+}
+
+.hello {
+  font-family: "Gloria Hallelujah";
+  color: #a78bfa;
+  font-size: 39px;
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 7px;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 90px;
+  margin: 0;
+  margin-bottom: 22px;
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 span {
+  color: #a78bfa;
+  font-size: 66px;
+  display: block;
+}
+
+.desc {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin: 37px 0 45px 0;
+  font-size: 24px;
+}
+
+.desc .highlight {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 72px;
+  }
+  
+  h1 span {
+    font-size: 60px;
+  }
+  
+  .hello {
+    font-size: 36px;
+  }
+  
+  .desc {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 52px;
+  }
+  
+  h1 span {
+    font-size: 38px;
+  }
+  
+  .hello {
+    font-size: 30px;
+  }
+  
+  .desc {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+  
+  h1 span {
+    font-size: 28px;
+  }
+  
+  .hello {
+    font-size: 24px;
+  }
+  
+  .desc {
+    font-size: 18px;
+  }
+  
+  .social-link {
+    font-size: 16px;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 37px;
+  margin-top: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #a78bfa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 21px;
+}
+
+.social-link:hover {
+  color: #ffffff;
+  background: rgba(167, 139, 250, 0.1);
+  transform: translateY(-2px);
+}
+
+.social-link .icon {
+  font-size: 27px;
+  display: flex;
+}
+
+.social-link .label {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .social-link {
+    font-size: 18px;
+  }
+}
