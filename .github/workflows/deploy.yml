@@ -28,6 +28,15 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify CNAME in dist
+        run: |
+          if [ ! -f dist/CNAME ]; then
+            echo "ERROR: CNAME not found in dist folder!"
+            exit 1
+          fi
+          echo "✓ CNAME file verified in dist folder"
+          cat dist/CNAME
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -35,3 +44,4 @@ jobs:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
           keep_files: true
+          cname: nitis.in
